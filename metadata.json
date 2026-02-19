@@ -1,0 +1,32 @@
+{
+  "id": "quantum-error-detection",
+  "name": "[[4,2,2]] Quantum Error Detection Code",
+  "category": "error-correction",
+  "description": "Detect (not correct) any single-qubit error using 4 physical qubits encoding 2 logical qubits.",
+  "long_description": "The [[4,2,2]] code is the smallest quantum error detecting code. It encodes 2 logical qubits into 4 physical qubits and detects (but cannot correct) any single-qubit error. The logical |00_L\u27e9 = (|0000\u27e9+|1111\u27e9)/\u221a2, equivalent to a 4-qubit GHZ state. Two stabilizer generators \u27e8XXXX, ZZZZ\u27e9 define the code space. A single-qubit error maps the state out of the code space, detectable by measuring stabilizers.",
+  "difficulty": "intermediate",
+  "qubit_count": 4,
+  "clbit_count": 4,
+  "gate_count": 4,
+  "depth": 4,
+  "tags": [
+    "error-detection",
+    "css-code",
+    "stabilizer",
+    "fault-tolerant"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "50% |0000\u27e9, 50% |1111\u27e9 (logical |00_L\u27e9)",
+  "references": [
+    {
+      "title": "Vaidman, Goldenberg, Wiesner (1996). Error Prevention Scheme with Four Particles. PRA 54(3), R1745",
+      "url": "https://doi.org/10.1103/PhysRevA.54.R1745"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
